@@ -112,6 +112,8 @@ LinkedList.prototype.reverseLinkedList = function () {
 const myLinkedList1 = new LinkedList();
 myLinkedList1.insertAtBeggining(4);
 myLinkedList1.insertAtEnd(7);
+myLinkedList1.insertAtGivenNode(myLinkedList1.head.next, 5);
+myLinkedList1.insertAtGivenNode(myLinkedList1.head.next.next, 6); // Insert after 5
 myLinkedList1.reverseLinkedList();
 console.log(myLinkedList1.printLinkedList());
 console.log(myLinkedList1);

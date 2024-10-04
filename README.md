@@ -4,3 +4,4 @@ DSA IN JAVASCRIPT
 2. Queue
 3. LinkedList
    - Singly LinkedList
+   - Doubly LinkedList

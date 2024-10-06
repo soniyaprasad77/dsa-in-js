@@ -23,6 +23,15 @@ const treeSumWithBreathFirstSearch = (root) => {
   return sum;
 };
 
+const treeSumWithRecursion = (root) => {
+  if (root === null) return 0;
+
+  return (
+    root.key +
+    treeSumWithRecursion(root.left) +
+    treeSumWithRecursion(root.right)
+  );
+};
 const root = new Node(1);
 root.left = new Node(2);
 root.right = new Node(3);
@@ -31,3 +40,4 @@ root.left.right = new Node(5);
 root.right.left = new Node(6);
 root.right.right = new Node(7);
 console.log(treeSumWithBreathFirstSearch(root));
+console.log(treeSumWithRecursion(root));

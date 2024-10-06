@@ -8,3 +8,8 @@ DSA IN JAVASCRIPT
 4. Binary Search Trees
    - Binary Serach Tree Methods
    - Depth First Traversal
+   - Breath First Traversal
+   - Tree Sum Problem Solution
+      - without recursion 
+      - with recursion
+      

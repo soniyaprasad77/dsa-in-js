@@ -55,7 +55,7 @@ console.log(recursiveDepthFirstTraversal(root));
 
  /* 
  
- node BinarySearchTree/dft.js 
+ node BinarySearchTree/dfs.js 
 [ 1, 2, 4, 5, 3, 6 ]
 [ 1, 2, 4, 5, 3, 6 ]
 

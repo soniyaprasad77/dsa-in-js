@@ -5,7 +5,7 @@ function sumOfnNumbers(n) {
   for (let i = 1; i <= n; i++) {
     sum = sum + i;
   }
-  return sum;
+   return sum;
 }
 console.log(sumOfnNumbers(3));
 console.log(sumOfnNumbers(5));
@@ -14,30 +14,37 @@ console.log(sumOfnNumbers(5));
 
 function sumOfnNumbersRecursive(n) {
   if (n == 1) {
-    return n;
+    return  n;
   }
-  return n + sumOfnNumbersRecursive(n - 1);
+   return n + sumOfnNumbersRecursive(n - 1);
 }
 console.log(sumOfnNumbersRecursive(3));
 console.log(sumOfnNumbersRecursive(4));
+/*
+output:
+6
+15
+6 
+10
+*/
 
 /* 
-                                sumOfnNumbersRecursive(4)                                                                  =====> return 10
+                                sumOfnNumbersRecursive(4)                                                                  =====>  10
                                                     -
                                                 -      -
                                               -           -
                                             -                -
-                                           4        sumOfnNumbersRecursive(3)                                              =====> return 4 + 6
+                                           4        sumOfnNumbersRecursive(3)                                              =====>  4 + 6
                                                                -
                                                             -      -
                                                           -           -
                                                         -                -
-                                                        3      sumOfnNumbersRecursive(2)                                   =====> return 3 + 3 
+                                                        3      sumOfnNumbersRecursive(2)                                   =====>  3 + 3 
                                                                                 -
                                                                              -     -
                                                                            -          -
                                                                          -               -
-                                                                         2       sumOfnNumbersRecursive(1)                 =====> return 2 + 1
+                                                                         2       sumOfnNumbersRecursive(1)                 =====>  2 + 1
                                                                                        -
                                                                                      -   
                                                                                   -        

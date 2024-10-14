@@ -31,6 +31,10 @@ function countVowelsRecursive(str, strLength) {
 }
 const myName = "Soniya";
 console.log(countVowelsRecursive(myName, myName.length));
+/* 
+Output : 
+3
+ */
 
 /*
                              cVR("Soniya", 6)              =====> return 3

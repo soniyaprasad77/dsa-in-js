@@ -26,23 +26,40 @@ function fibonacciRecursive(n) {
 }
 console.log(fibonacciRecursive(5));
 console.log(fibonacciRecursive(6));
+/**
+ Output 
+ 5
+ 8 
+ 5 
+ 8
+ */
 
 /*
 Recursion tree for fibonacciRecursive(5):
 
-fibonacciRecursive(5)
-├── fibonacciRecursive(4)
-│   ├── fibonacciRecursive(3)
-│   │   ├── fibonacciRecursive(2)
-│   │   │   ├── fibonacciRecursive(1) -> 1
-│   │   │   └── fibonacciRecursive(0) -> 0
-│   │   └── fibonacciRecursive(1) -> 1
-│   └── fibonacciRecursive(2)
-│       ├── fibonacciRecursive(1) -> 1
-│       └── fibonacciRecursive(0) -> 0
-└── fibonacciRecursive(3)
-    ├── fibonacciRecursive(2)
-    │   ├── fibonacciRecursive(1) -> 1
-    │   └── fibonacciRecursive(0) -> 0
-    └── fibonacciRecursive(1) -> 1
+                                  fibonacciRecursive(5)
+                                            -
+                                          -      -
+                                        -           -
+                                      -                -
+                      fibonacciRecursive(4)          fibonacciRecursive(3)
+                         -                                          -
+                      -      -                                   -      -
+                   -           -                              -             -
+                -                -                        -                      -
+      fibonacciRecursive(3) fibonacciRecursive(2)    fibonacciRecursive(2)    fibonacciRecursive(1) 
+                -                          -                                        (1)
+            -      -                     -     -
+          -          -                -            -
+       -               -            -                   -
+      -                 -  fibonacciRecursive(1)    fibonacciRecursive(0) 
+    -                     -         (1)                   (0)
+ fibonacciRecursive(2) fibonacciRecursive(1)              
+           -                   (1)
+ -      -      -
+   -                -
+ -                      -
+ fibonacciRecursive(1)  fibonacciRecursive(0)
+                               (0)
+
 */

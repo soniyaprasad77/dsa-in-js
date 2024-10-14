@@ -28,4 +28,31 @@ function firstOccuranceRecursive(arr, currentIndex, findMe) {
   }
   return firstOccuranceRecursive(arr, currentIndex + 1, findMe);
 }
-console.log(firstOccuranceRecursive([2, 9, 1, 6, 8, 1, 9], 0, 1));
+console.log(firstOccuranceRecursive([2, 9, 1, 6], 0, 1));
+
+/* 
+Output 
+1
+2
+*/
+
+/*
+               firstOccuranceRecursive([2, 9, 1, 6], 0, 1)              =====> return 
+                    - (not found, move to next index)
+                    -     
+                    -         
+                    -                
+               firstOccuranceRecursive([2, 9, 1, 6], 1, 1)              =====> return 
+                    - (not found, move to next index)
+                    -      
+                    -           
+                    -                
+               firstOccuranceRecursive([2, 9, 1, 6], 2, 1)               =====> return 2 (found)
+                    - (found, return index 2)
+                    -     
+                    -          
+                    -               
+               firstOccuranceRecursive([2, 9, 1, 6], 3, 1)                =====> not reached (base case met)
+       
+
+*/

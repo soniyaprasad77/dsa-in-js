@@ -20,3 +20,31 @@ function powerOfNumRecursive(base, power) {
   return base * powerOfNumRecursive(base, power - 1);
 }
 console.log(powerOfNumRecursive(2, 3));
+/*
+Output:
+ 8
+ 8
+ */
+/* 
+                                powerOfNumRecursive(2,3)                                                                  =====>  8
+                                                    -
+                                                -      -
+                                              -           -
+                                            -                -
+                                           2       powerOfNumRecursive(2,2)                                              =====>  2 * 4
+                                                               -
+                                                            -      -
+                                                          -           -
+                                                        -                -
+                                                        2      powerOfNumRecursive(2,1)                                   =====>  2 * 2 
+                                                                                -
+                                                                             -     -
+                                                                           -          -
+                                                                         -               -
+                                                                         2       powerOfNumRecursive(2,0)                 =====>  2 * 1
+                                                                                       -
+                                                                                     -   
+                                                                                  -        
+                                                                                1                                          =====> return 1;
+*/
+

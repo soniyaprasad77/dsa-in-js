@@ -48,3 +48,58 @@ function removeTaSRecursive2(str) {
 
 console.log(removeTaSRecursive2("Hello t "));
 console.log(removeTaSRecursive2("Hell l \to"));
+
+/**
+ * Output 
+Helllo
+Hellot
+Helllo
+Hellot
+Helllo
+ * 
+ */
+
+/*
+  removeTaSRecursive("Hello\tt ")                                                                   ======> return "Hellot"
+        -
+        -     -
+      -            -
+    -                    -
+firstIndex = H         removeTaSRecursive("ello\tt ")                                                =====> "Hellot"
+                                      - 
+                                    -    -
+                                  -         -
+                                -              -
+                    firstIndex = e        removeTaSRecursive("llo\tt ")                               =====> "ellot"
+                                            -
+                                          -     -
+                                        -           -
+                                      -                 -
+                                  firstIndex = l    removeTaSRecursive("lo\tt ")                          =====> "llot" 
+                                                        -
+                                                      -     -
+                                                    -           -
+                                                  -                 -
+                                              firstIndex = l    removeTaSRecursive("o\tt ")                      =====> "lot" 
+                                                                    -
+                                                                  -     -
+                                                                -           -
+                                                              -                 -
+                                                          firstIndex = o    removeTaSRecursive("/tt ")                    =====> "ot" 
+                                                                                -
+                                                                              -     -
+                                                                            -           -
+                                                                          -                 -
+                                                                      firstIndex = "\t"   removeTaSRecursive("t ")                   =====> "t"
+                                                                        skip               -
+                                                                                          -     -
+                                                                                        -           -
+                                                                                      -                 -
+                                                                                  firstIndex = t    removeTaSRecursive(" ")        =====> "t" 
+                                                                                                            -
+                                                                                                            -  - 
+                                                                                                          -      -   
+                                                                                                        -           -     
+                                                                                                firstIndex = " "   removeTaSRecursive("")   =====>   ""                                                                                                                                                                                                                                      
+                                                                                                      skip               return ""
+*/

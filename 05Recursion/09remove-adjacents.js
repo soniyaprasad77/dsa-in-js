@@ -31,3 +31,55 @@ helo
 helo
 
 */
+
+/*
+removeAdjacentRecursive("hellloooo")
+            -
+          -   -
+        -       -
+      -           -
+     "h"           removeAdjacentRecursive("ellloooo")
+            -
+          -   -
+        -       -
+      -           -
+   "e" +       removeAdjacentRecursive("llloooo")
+                            -
+                         -    -
+                        -       -
+                      -           -
+                          removeAdjacentRecursive("llooooo")
+                                     -
+                                   -    -
+                                  -       -
+                                -           -
+                                     removeAdjacentRecursive("looooo")
+                                            -
+                                          -    -
+                                        -        -
+                                      -            -
+                                   "l"  +   removeAdjacentRecursive("ooooo")
+                                                -
+                                              -    -
+                                            -        -
+                                          -            -
+                                               removeAdjacentRecursive("oooo")
+                                                -
+                                              -    -
+                                            -        -
+                                          -            -
+                                                 removeAdjacentRecursive("ooo")
+                                                              -
+                                                            -    -
+                                                          -        -
+                                                        -            -
+                                                              removeAdjacentRecursive("oo")
+                                                                        -
+                                                                      -    -
+                                                                    -        -
+                                                                  -            -
+                                                                     removeAdjacentRecursive("o")
+                                                                                |
+                                                                                |-- "o"
+
+*/

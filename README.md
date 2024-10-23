@@ -33,4 +33,14 @@ This repository contains implementations of various data structures and algorith
 - **06Graphs/**
   - [01DFS.js](06Graphs/01DFS.js)
   - [02BFS.js](06Graphs/02BFS.js)
+  - [03driected-path.js](06Graphs/03driected-path.js)
+  - [04undriected-graph-marker.js](06Graphs/04undriected-graph-marker.js)
+  - [05count-connected-graph.js](06Graphs/05count-connected-graph.js)
+  - [06find-largest-island.js](06find-largest-island.js)
+  - [07shortest-path.js](07shortest-path.js)
+  - [08grid-island-count.js](08grid-island-count.js)
+  - [09min-max-islands.js](09min-max-islands.js)
 
+- **07Dynamic Progamming/**
+  - [01Fibonacci.js](01Fibonacci.js)
+  - [02Tribonacci.js](02Tribonacci.js)

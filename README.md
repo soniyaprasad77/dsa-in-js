@@ -51,3 +51,7 @@ This repository contains implementations of various data structures and algorith
   - [01Fibonacci.js](07DynamicProgramming/01Fibonacci.js)
   - [02Tribonacci.js](07DynamicProgramming/02Tribonacci.js)
   - [03Coin-sum.js](07DynamicProgramming/03Coin-sum.js)
+  - [04min-coin.js](07DynamicProgramming/04min-coin.js)
+  - [05robot-destination.js](07DynamicProgramming/05robot-destination.js)
+  - [06min-max-path-cost.js](07DynamicProgramming/06min-max-path-cost.js) 
+  - [07house-robber.js](07DynamicProgramming/07house-robber.js)
